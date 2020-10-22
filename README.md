@@ -2,10 +2,10 @@
 
 ## **WeatherPy**
 
-	This challenge introduces a new library citipy that provides geocoordinates for available cities with population over 500.
+	This challenge introduced a new library citipy that provides geocoordinates for available cities with population over 500.
 
 ## General info
-	Utilized the open weather api to get weather data for random cities list generated using citipy library.
+	Utilized open weather api to get weather data for random cities list generated using citipy library.
 
 ## Technologies
 * jupyter notebook - version 6.0.3
@@ -43,29 +43,26 @@
  
  Linear Regression:
  
-	1.created two separate dataframes for cities in northern & southern hemisphere.  
+	1.created two separate dataframes, one for cities in northern hemisphere & one for cities in southern hemisphere.  
 	2.plotted linear regression lines & entered correlations based on findings.  
 
 
 ##**VacationPy**
 
-	This challenge uses jupyter-gmaps & google places API to generate humidity heat maps & ideal vacation cities with marker layer.  
+	Used jupyter-gmaps & google places API to generate humidity heat maps with marker layer.  
 
 ## General info
-	Utilized .csv file generated in WeatherPy assignment.
+	Utilized .csv file generated in WeatherPy assignment.  
 
 ## Technologies
 * jupyter notebook - version 6.0.3
 
 ## Code Examples
 
- Data Cleaning:
-	1.cleaned main dataframe retaining columns for Lat & Lon.  
-
  Humidity Heat Map:
 	1.used gmaps to generate the base map.  
-	2.passed Lat and Lon columns values as inputs to locations & humidity column values as weights.  
- 3.added a heat map layer & saved the figure as .png file.  
+	2.passed Lat and Lon column values as inputs to locations & humidity column values as weights.  
+	3.added a heat map layer & saved the figure as .png file.  
  
  Weather Fitting Criteria:
 	1.created new dataframe matching the ideal weather criteria.  
