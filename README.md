@@ -13,17 +13,34 @@ Utilized the open weather api to get weather data for random cities list generat
 
 ## Code Examples
 
-`Data Cleaning:
+Data Cleaning:
 
 1.created a cities list to hold a random city & tested it against query url for exception handling to identify a fake city.
 2.appended(0) to the list for values returned by fake cities.
 3.cleaned the dataframe by retaining the rows that have non-zero values.
 4.saved the file as csv.
 
+``cities=["New York", "London","Boslo Fake City","Moscow","Beijing"]
+``for city in cities:
+    url= query_url + city
+    time.sleep(1)
+    try:
+        response=requests.get(url).json()
+        lat.append(response["coord"]["lat"])
+	except KeyError:
+        #print("City not found")
+        lat.append(0)
+        lng.append(0)
+``cleaned_df=df.loc[df["Lat"]!=0]``
+
+
  Data Plotting:
  
- 1.plotted scatter plots using the dataframe that was created from the csv file.
+ 1.plotted scatter plots using the dataframe created from the csv file.
+ ``x=pd.to_numeric(df['Lat'])
+ ``y=pd.to_numeric(df['Max Temp (F)'])
  2.saved the figures as .png files.
+ ``plt.savefig(r"output_files\LatvMaxTemp.png")``
  
  Linear Regression:
  
@@ -43,7 +60,7 @@ Utilized the .csv file generated in WeatherPy assignment.
 
 ## Code Examples
 
-`Data Cleaning:
+Data Cleaning:
 1.from main dataframe, created a new dataframe that has columns for Lat & Lon.
 
  Humidity Heat Map:
