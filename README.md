@@ -3,6 +3,11 @@
 ## **WeatherPy**
 
 	This challenge introduced a new library citipy that provides geocoordinates for available cities with population over 500.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Code Examples](#codeexamples)
+
 
 ## General info
 	Utilized open weather api to get weather data for random cities list generated using citipy library.
@@ -47,9 +52,14 @@
 	2.plotted linear regression lines & entered correlations based on findings.  
 
 
-##**VacationPy**
+##** VacationPy**
 
 	Used jupyter-gmaps & google places API to generate humidity heat maps with marker layer.  
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Code Examples](#codeexamples)
+
 
 ## General info
 	Utilized .csv file generated in WeatherPy assignment.  
