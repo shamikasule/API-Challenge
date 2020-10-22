@@ -1,7 +1,8 @@
 # API-Challenge
 API homework
 
-#WeatherPy
+*WeatherPy*
+
 This challenge involves using a new library citipy that provides geocoordinates for available cities
 with population over 500
 
@@ -19,11 +20,13 @@ Utilized the open weather api to get weather data for random cities list generat
 ## Code Examples
 
 `Data Cleaning:
+
 1.created a cities list to hold a random city & tested it against query url for exception handling to identify a fake city.
 2.appended(0) to the list for values returned by fake cities. cleaned the dataframe by retaining the rows that have non-zero values.
 3.saved the file as csv.
 
  Data Plotting:
+ 
  1.plotted scatter plots using the dataframe that was created from the csv file.
  2.saved the figures as .png files.
  
@@ -33,7 +36,8 @@ Utilized the open weather api to get weather data for random cities list generat
 2.plotted the linear regression lines & entered correlations based on the findings.
 
 
-#VacationPy
+*VacationPy*
+
 This challenge involves using jupyter-gmaps & google places API to generate humidity heat maps & ideal vacation cities with marker layer.
 
 ## Table of contents
