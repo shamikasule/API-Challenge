@@ -2,11 +2,11 @@
 
 **WeatherPy**
 
-This challenge involves using a new library citipy that provides geocoordinates for available cities
-with population over 500
+	This challenge involves using a new library citipy that provides geocoordinates for available cities
+	with population over 500
 
 ## General info
-Utilized the open weather api to get weather data for random cities list generated using citipy library.
+	Utilized the open weather api to get weather data for random cities list generated using citipy library.
 
 ## Technologies
 * jupyter notebook - version 6.0.3
@@ -15,12 +15,12 @@ Utilized the open weather api to get weather data for random cities list generat
 
 Data Cleaning:
 
-1.created a cities list to hold a random city & tested it against query url for exception handling to identify a fake city.
-2.appended(0) to the list for values returned by fake cities.
-3.cleaned the dataframe by retaining the rows that have non-zero values.
-4.saved the file as csv.
+	1.created a cities list to hold a random city & tested it against query url for exception handling to identify a fake city.  
+	2.appended(0) to the list for values returned by fake cities.  
+	3.cleaned the dataframe by retaining the rows that have non-zero values.  
+	4.saved the file as csv.  
 
-``cities=["New York", "London","Boslo Fake City","Moscow","Beijing"]
+``cities=["New York", "London","Boslo Fake City","Moscow","Beijing"]``
 ``for city in cities:
     url= query_url + city
     time.sleep(1)
